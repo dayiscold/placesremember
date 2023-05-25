@@ -1,5 +1,5 @@
 {% extends 'main/layout.html' %}
-
+{% load static %}
 {% block title %} PlacesRemember {% endblock %}
 
 {% block content %}
@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-12">
             <div class="text-center">
-              <img src="favicon.jpg" class="rounded-circle" style="width: 150px; padding-top: 50px">
+              <img src="{% static 'main/images/favicon.jpg' %}" class="rounded-circle" style="width: 150px; padding-top: 50px">
             </div>
             <p text-center style="padding: 50px 50px">
               Добро пожаловать на наш сайт, где вы можете поделиться своими
@@ -29,7 +29,7 @@
           <div class="col 12 text-center">
             <a href="login.html" style="text-decoration: none; color: white;">
               <button type="button" class="btn btn-dark mx-auto">
-              <img src="pngwing.com.png" class="google_logo" weight="20px" height="20px">Войти с аккаунта Google
+              <img src="{% static 'main/images/pngwing.com.png'%}" class="google_logo" weight="20px" height="20px">Войти с аккаунта Google
             </a>
             </button>
           </div>

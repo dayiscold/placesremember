@@ -1,0 +1,17 @@
+header {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    font-size: large;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google_logo {
+    margin-right: 10px;
+    margin-bottom: 3px;   
+}
+
