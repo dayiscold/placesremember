@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Tablish(models.Model):
-    title = models.CharField('Название места', max_length=50, default='Воспоминание')
+    title = models.CharField('Название места', max_length=50)
     memory_text = models.TextField('Напишите Отзыв')
     date = models.DateTimeField('Дата публикации')
 

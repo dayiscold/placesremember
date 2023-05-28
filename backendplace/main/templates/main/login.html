@@ -19,12 +19,18 @@
         <div class="row">
             <div class="col-12">
                 <div class="text-center">
-                    <div class="memory_list">
+                    <div class="add_memory">
+                    <a href="{% url 'create' %}"><button type="button" class="btn btn-primary" style="margin-top: 30px;">
+                        Добавить воспоминание
+                    </button></a>
+                    </div>
+                    <div class="memory_list" style="margin-top: 40px;">
                         {% if memory %}
                             {% for el in memory %}
                                 <div class="alert alert-primary">
                                     <h3>{{ el.title }}</h3>
                                     <p>{{ el.memory_text }}</p>
+                                    <p style="text-align: right; font-size: 10pt">{{ el.date }}</p>
                                 </div>
                             {% endfor %}
                         {% else %}

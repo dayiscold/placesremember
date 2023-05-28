@@ -1,0 +1,40 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+{% block title %} Добавить воспоминание  {% endblock %}
+
+{% block content %}
+    <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                <img src="{% static 'main/images/favicon.jpg'%}" class="rounded-circle" style="width: 150px; padding-top: 50px">
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    <h1 class="text-center">Форма по добавлению воспоминания</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center">
+                <form method="post">
+                    {% csrf_token %}
+                    <span class="text-danger" >{{ error }}</span>
+                    {{ form.title }}<br />
+                    {{ form.memory_text }}
+                    <div class="pravilo" style="margin-top: 10px; margin-bottom: 10px;">
+                        Укажите дату и время публикации в формате 2023-05-28 17:03:14
+                    </div>
+                    {{ form.date }}<br />
+                    <div class="buttons_form" style="padding-bottom: 15px;">
+                    <button class="btn btn-danger" type="reset">Очистить</button>
+                    <button class="btn btn-primary" type="submit">Готово</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

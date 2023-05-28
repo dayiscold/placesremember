@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='Tablish',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(default='Воспоминание', max_length=50, verbose_name='Название места')),
+                ('title', models.CharField(max_length=50, verbose_name='Название места')),
                 ('memory_text', models.TextField(verbose_name='Напишите Отзыв')),
                 ('date_memory_publish', models.DateTimeField(verbose_name='Дата публикации')),
             ],

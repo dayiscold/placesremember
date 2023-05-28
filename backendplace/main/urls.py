@@ -2,6 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.index),
-    path('authorized', views.afterindex)
+    path('', views.afterindex, name='memories_home'),
+    path('create', views.create, name='create')
 ]
