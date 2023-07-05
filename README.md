@@ -3,7 +3,7 @@ PlacesRemember - место, где вы можете делиться свои�
 
 
 ## Технологии
-Python 3.11, Django 4, Django allauth, Vk API, HTML, CSS, Bootstrap
+Python 3.11, Django 4, Django allauth, Vk API, HTML, CSS, Bootstrap, SQLite
 
 ## Фото
 
