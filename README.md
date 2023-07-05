@@ -2,16 +2,16 @@
 PlacesRemember - место, где вы можете делиться своими воспоминаниями и отзывами про разные места по всему миру!
 
 
-##
+## Технологии
 Python 3.11, Django 4, Django allauth, Vk API, HTML, CSS, Bootstrap
 
-## PHOTO
+## Фото
 
 ![images/1.jpg](images/1.jpg)
-xmnkmg
+Главная страница
 
 ![images/1.jpg](images/2.jpg)
-xmgnklx
+Страница авторизованного пользователя
 
 ![images/1.jpg](images/3.jpg)
-hxbfjxm
+Добавление воспоминания
